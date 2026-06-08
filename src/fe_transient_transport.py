@@ -23,7 +23,7 @@ The formulation is implemented with stabilized finite elements. We use the
 Streamline-Upwind/Petrov–Galerkin (SUPG) stabilization to suppress
 spurious oscillations in advection-dominated (high-Péclet) regimes while
 retaining accuracy.
-                                                                 #######Change this reference to a transient transport problem.#######         
+
 We follow the approach of :
   Alexandersen, Joe. "Topology optimisation for coupled convection problems." (2013)
 
@@ -83,7 +83,7 @@ class FEA(_nlsolv.NonlinearProblem):
       This function computes the stabilization parameter (τ) used in
         advection-diffusion problems for each element.The stabilization
         parameter (τ) is computed using an approximate minimum function considering
-        two limiting cases:
+        three limiting cases:
 
       - τ₁: Convective limit
       - τ2: Transient limit
@@ -135,7 +135,7 @@ class FEA(_nlsolv.NonlinearProblem):
     inv_sq_tau1 = (4 * ue) / elem_char_length**2
     tau_2 = 0.5 * delta_time
     tau_3 = (peclet_number * elem_char_length**2) / 4
-                                                                     #######Do we need Tau 4?####### 
+
     return (inv_sq_tau1 + tau_2 ** (-2) + tau_3 ** (-2)) ** (-1 / 2)
 
   def _compute_elem_residual(
