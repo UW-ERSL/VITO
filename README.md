@@ -1,4 +1,4 @@
-# [VITO: Vascular Geometry and Blood Flow Estimation Using Inverse Topology Optimization](https://arxiv.org/abs/2606.05487)
+# [VASTO: Simultaneous recovery of vascular geometry and blood flow via differentiable topology optimization](https://arxiv.org/abs/2606.05487)
 
 [Pramod Thombre](https://scholar.google.com/citations?user=pMWVTWIAAAAJ&hl=en), [Rahul Kumar Padhy](https://sites.google.com/view/rahulkp/home), [Roshan M. D'Souza](https://scholar.google.com/citations?user=2PQhIccAAAAJ&hl=en), [Krishnan Suresh](https://scholar.google.com/citations?user=hqoL27AAAAAJ&hl=en)
 
